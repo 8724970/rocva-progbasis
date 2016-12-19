@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;
+	charset=UTF-8">
+	<title>Objecten</title>
+</head>
+
+<body>
+<script>
+	var laptops = [];
+	laptops['macbook'] =
+	{'model':'air', 'voorraad':2000, 'prijs': 1090};
+	document.write(
+	'<br />laptops array aangemaakt');
+
+	var mac = 'macbook' in laptops;
+	document.write(
+		'<br> mac specifikaties ...' +
+		'<br> voorraad: ' + laptops['macbook']['voorraad']);
+</script>
+</html>
+
+<!--opgave A) Voeg de volgende laptop toe: asusbook model wind, voorraad 1000 en prijs 900 -->
